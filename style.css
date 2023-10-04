@@ -1,0 +1,674 @@
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+
+
+html {
+  font-size: 62.5%;
+  font-family: 'Times New Roman', Times, serif
+}
+
+
+
+a,
+li {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* *************************************************************************************************************** */
+
+
+
+.navbr {
+  display: flex;
+  align-items: center;
+  top: 0px;
+  position: sticky;
+  padding: 10px;
+  z-index: 6;
+  background-color: whitesmoke;
+  background-image: linear-gradient(180deg, rgb(220, 20, 60), rgb(220, 20, 60),rgb(220, 20, 60), rgb(220, 20, 60), rgb(220, 20, 60), rgb(220, 20, 60),rgb(126, 14, 36));
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.logo {
+  margin-left: 20px;
+  flex: 1;
+
+
+}
+
+.logo a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.lists {
+  display: flex;
+  padding-right: 2px;
+
+}
+
+li {
+  list-style: none;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  flex-basis: 10px;
+  align-items: center;
+}
+
+.nav-list a {
+  color: whitesmoke;
+  font-size: large;
+  text-decoration: none;
+
+}
+
+.login {
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  background-color: crimson;
+  border-radius: 0.5rem;
+
+}
+
+.signup {
+  background-color: whitesmoke;
+  color: crimson;
+  border-radius: 0.5rem;
+}
+
+
+.icons {
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  display: block;
+}
+
+
+button {
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+  border: 1px solid whitesmoke;
+  border-radius: 5rem;
+  transition: background-color 300ms;
+}
+
+button:focus,
+button:hover {
+  background: lightcoral;
+  cursor: pointer;
+}
+
+.navbr ul li a:hover,
+.navbr ul li:hover {
+  color: lightcoral;
+}
+
+.navbr .drop-down {
+  position: absolute;
+  background-color: black;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10;
+  height: auto;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 2rem;
+  top: 5 rem;
+
+  transition: all .3s linear;
+
+  visibility: hidden;
+  opacity: 0;
+
+
+}
+
+.navbr ul li:hover>.drop-down {
+  visibility: visible;
+  opacity: 1;
+  top: 8.8rem;
+  z-index: 5;
+}
+
+.navbr .drop-down li {
+  height: 3rem;
+  line-height: 3rem;
+  width: 100%;
+  text-align: center;
+  transition: all .3s linear;
+  /*border: 1px solid red;*/
+}
+
+.navbr .drop-down li:hover {
+  color: lightcoral;
+}
+
+
+
+.contact-number {
+  background-color: khaki;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+footer {
+  display: flex;
+  background: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 0px;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+}
+
+.centre {
+  display: flex;
+}
+
+
+
+/*=============================================================================================================*/
+/*                                         bottom                                                              */
+/*=============================================================================================================*/
+.bottom-content-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: khaki;
+  font-family: 'Times New Roman', Times, serif;
+  color: crimson;
+  height: 8rem;
+
+}
+
+.first-content {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.get-quotation {
+  margin: 0.5rem;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.6;
+  border: 1px solid whitesmoke;
+  background-color: crimson;
+  color: whitesmoke;
+  border-radius: 0.5rem;
+  transition: background-color 300ms;
+}
+
+.bottom-content-second {
+  background-color: crimson;
+}
+
+.bottom-content-second-inside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: first center;
+  background-color: crimson;
+
+  border-top: 1px solid grey;
+  padding: 2rem;
+  margin: 0px 5rem;
+}
+
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.btnss1 {
+  border: 1px solid whitesmoke;
+  background-color: crimson;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 2px;
+}
+
+.btnss2 {
+  background-color: whitesmoke;
+  color: crimson;
+  border: 1px solid whitesmoke;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 2px;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/*==========================================================================================================*/
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 2rem 0;
+  background: pink;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  position: relative;
+  padding-bottom: 1.4rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: crimson;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 8rem;
+  margin: 0 40px;
+  border-radius: 0.5rem;
+}
+
+/*=================================================================================================================*/
+/*                                          PRODUCTS                                                               */
+/*===================================================================================================================*/
+
+
+.product-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Wrap cards to the next row when needed */
+  justify-content: space-around;
+  /* Adjust spacing between cards */
+  background-color: crimson;
+}
+
+.product-card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  height: 300px;
+  perspective: 1000px;
+  position: relative;
+}
+
+
+.product-front,
+.product-back {
+  width: 100%;
+  height: 100%;
+  border: 2px solid whitesmoke;
+  border-radius: 1.2rem;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.product-front img {
+  height: 20rem;
+  width: 23.5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  ;
+}
+
+.product-front {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: rotateY(0deg);
+}
+
+.product-back {
+  background-color: crimson;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card:hover .product-front {
+  transform: rotateY(-180deg);
+}
+
+.product-card:hover .product-back {
+  transform: rotateY(0deg);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-btn,
+.details-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: khaki;
+  color: crimson;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-btn:hover,
+.details-btn:hover {
+  background-color: lightcoral;
+}
+
+/*=====================================================================================================================*/
+/*                                                     REVIEW                                                          */
+/*=====================================================================================================================*/
+review {
+  background-image: url("bg.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+}
+
+.review_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}
+
+.review_container__left h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ff226f;
+}
+
+.review_container__left p {
+  color: #333333;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.review_container__left button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right,
+      #ff226f,
+      #fe6769);
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.review_container__right {
+  display: grid;
+  gap: 2rem;
+}
+
+.review_card {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.review_card img {
+  max-width: 75px;
+  border-radius: 100%;
+}
+
+.review_card__content {
+  display: flex;
+  gap: 1rem;
+}
+
+.review_card__content span i {
+  font-size: 2rem;
+  color: #ff226f;
+}
+
+.review_card__details p {
+  font-style: italic;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.review_card__details h4 {
+  text-align: right;
+  color: #ff226f;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (width < 1200px) {
+  .review_container {
+    gap: 3rem;
+  }
+}
+
+@media (width < 900px) {
+  .review_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .review_container__right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 750px) {
+  .review_container__right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*=====================OFFERS===================*/
+.offers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: crimson;
+  overflow: hidden;
+  background-size: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.back_img {
+  width: 100%;
+  overflow: hidden;
+  margin: 2rem;
+  border-radius: 1.2rem;
+  
+}
+
+.offer_heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: whitesmoke;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.welcome_offers p {
+  font-size: 1.8rem;
+  color: crimson;
+  padding: 2rem;
+  background-color: whitesmoke;
+  border-radius: 2rem;
+  margin: 2rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.welcome_offers p:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+
+/*==============================login and signup =========================================*/
+.main_div{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #ff226f;
+}
+.box{
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.box h1{
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.box .inputBox{
+  position: relative;
+}
+
+.box .inputBox input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+}
+
+.box .inputBox label{
+  position: absolute;
+  top:0;
+  left:0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+.box input[type="submit"]{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
